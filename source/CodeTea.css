@@ -1,0 +1,263 @@
+body {
+    margin: 0 0 0 0;
+    background-color: black;
+    color: blue;
+    width: 100%;
+    height: calc(100vh); /*获取当前视图宽度*/
+    /* border: red solid 2px; */
+}
+
+#_blogHeader {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    width: 98%;
+    height: 10%;
+    /* border: red solid 2px; */
+    /* margin-left: 1%; */
+}
+#_blogHeader img {
+    position: relative;
+    height: 45%;
+    width: 2.5%;
+    margin-left: 1%;
+}
+#_blogHeader #_name {
+    position:absolute;
+    top: 3vh;
+    right: -10vw;
+}
+
+#_blogHeader #_name span {
+    font-size: 3vh;
+    /* border: 1px blue solid;  */
+}
+#_blogHeader #_name input {
+    background-color: black;
+    vertical-align: middle;
+    border: 0;
+    width: 8%;
+    caret-color: white;
+    height: 4vh;
+    font-size: 4vh;
+    outline: 0;
+    
+    
+}
+
+#_left {
+    position: relative;
+    width: 8%;
+    height: 89%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* border: blue solid 2px; */
+    border-right: 1px whitesmoke solid;
+}
+
+#_left button {
+    color: white;
+    width: 80%;
+    height: 8%;
+    font-size: xx-large;
+    font-family: "KaiTi";
+    margin-right: 15%;
+    background-color: black;
+    border-left: 0;
+    border-right: 0;
+}
+
+#_show {
+    position:absolute;
+    top: 12%;
+    left: 12%;
+    
+    width: 85%;
+    height: 85%;
+
+    /* border: 1px blue solid;  */
+    /* background-color: pink; */
+    /* opacity: 1; */
+}
+
+#_show #_home {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    
+    /* background-image: url("./茶.jpg"); */
+    /* background-size: cover; */
+    /* background-color: pink; */
+    /* border: 2px blue solid; */
+    opacity: 1;
+}
+#_show #_home img{
+    position: relative;
+    width: 60vw;
+    height: 80vh;
+    opacity: 0.6;
+}
+#_show #_home figcaption {
+    /* position: absolute; */
+    color: white;
+}
+
+#_show #_home #_a1 {
+    position: absolute;
+    font-size: 3em;
+    left:94%;
+    top: 4%;
+    writing-mode: vertical-lr;
+    letter-spacing: 1em;
+    font-weight: bolder;
+}
+
+#_show #_home figcaption #_a2 {
+    position: absolute;
+    left:87%;
+    top: 45%;    
+    font-weight: bolder;
+    font-size: 3em;
+    writing-mode: vertical-lr;
+    letter-spacing: 1em;
+}
+
+#_show #_notes {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: none;
+}
+
+#_show #_notes dl {
+    width: 100%;
+    height: 82%;
+    
+}
+
+#_show #_notes dt {
+    width: 85%;
+    height: 8%;
+    margin-left: 5%;
+    margin-top: 3%;
+    letter-spacing: 3px;
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgba(252, 253, 254, 0.9);
+    color: black;
+    border-radius: 0.2em 0.2em 0 0 ;
+    border-bottom: black 0.3em solid;
+    border-bottom-style:groove;
+}
+#_show #_notes dd {
+    width: 85%;
+    height: 19%;
+    margin-left: 5%;
+    vertical-align: middle;
+    text-align: left;
+    text-indent: 2em;
+    font-size: 1.1em;
+    background-color: rgba(252, 253, 254, 0.9);
+    color: black;
+    border-radius:  0 0 0.2em 0.2em;
+}
+
+#_show #_notes #_next {
+    /* display: none; */
+    position: relative;
+    width: 3%;
+    height: 8%;
+    border: black solid 1px;
+    /* margin-left: 42.5%; */
+    /* background-color: red; */
+    /* border: 1px blue solid;  */
+}
+
+#_show #_search {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    /* text-align: center; */
+    /* display: none; */
+
+    /* border: 1px blue solid;  */
+    /* background-color: pink; */
+    display: none;
+}
+
+#_show #_search form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    margin: 0 0 0 0;
+    /* border: 1px blue solid;  */
+}
+#_show #_search form input {
+    
+    width: 40%;
+    height: 50%;
+    font-size: 2em;
+    /* margin-top: 2%; */
+    /* text-indent: 0.6em; */
+    border-radius: 0.5em;
+}
+#_show #_search form img {
+
+    width: 7%;
+    height: 50%;
+    margin-left: 1%;
+    opacity: 0.7;
+}
+
+#_show #_search #_tags {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    
+    width: 90%;
+    height: 85%;
+    /* border: 1px red solid;  */
+    /* display: none; */
+}
+#_show #_search #_tags img {
+    vertical-align: middle;
+    width: 4%;
+    height: 6%;
+    margin-left: 8%;
+    margin-top: 3%;
+}
+#_show #_search #_tags label {
+    vertical-align: middle;
+    margin-left: 1%;
+    margin-top: 3%;
+    font-size: 2em;
+    color: white;
+}
+
+#_show #_search #_searchResult {
+    position: relative;
+    width: 100%;
+    height: 85%;
+    border: 1px red solid; 
+    display: none;
+}
+
+#_show #_teaLife {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+    opacity: 0.3;
+    display: none;
+}

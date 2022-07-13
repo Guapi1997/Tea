@@ -1,0 +1,109 @@
+/* 特效 */
+.water {
+    position: relative;
+}
+.water span {
+    position: relative;
+}
+
+.water span:nth-child(1) {
+    position: absolute;
+    -webkit-text-stroke: 2px white;
+}
+
+.water span:nth-child(2) {
+    color: green;
+    animation: animate 1s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0%, 100% {
+        clip-path: polygon(1% 65%, 32% 75%, 44% 75%, 69% 70%, 86% 62%, 97% 57%, 100% 54%, 100% 99%, 20% 100%, 5% 100%);
+    }
+    50% {
+        clip-path: polygon(2% 73%, 24% 74%, 40% 74%, 66% 59%, 87% 50%, 97% 45%, 100% 43%, 100% 99%, 10% 100%, 10% 100%);
+    }
+}
+
+/* 上下斜交替出现 */
+.tangbao_triSpin {
+    animation: triSpin 10s ease-in-out  infinite;
+}
+
+@keyframes triSpin {
+    0%, 10% {
+        clip-path: polygon(0% 0%, 100% 100%, 100% 0%);
+        color: dimgray;
+    }
+    10%, 20% {
+        clip-path: polygon(0% 0%, 100% 100%, 100% 0%);
+        color: white;
+    }
+    20%, 40% {
+        clip-path: polygon(0% 0%, 0% 100%, 100% 100%);
+        color: ghostwhite;
+    }
+    40%, 60% {
+        clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
+        color: whitesmoke;
+        
+    }
+    60%, 80% {
+        clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
+        color: gainsboro;
+    }
+    80%, 100% {
+        clip-path: polygon(0% 0%, 100% 100%, 100% 0%);
+        color: dimgray;
+    }
+}
+
+.tangbao_skipCircle {
+    animation: skipCircle 3s ease-in-out infinite;
+}
+
+@keyframes skipCircle {
+    0%, 50% {
+        clip-path: circle(10% at 50% 30%);
+        background-color: white;
+        opacity: 1;
+    }
+
+    25%, 50% {
+        clip-path: circle(10% at 50% 50%);
+        background-color: whitesmoke;
+        opacity: 0.8;
+    }
+    50%, 75% {
+        clip-path: circle(10% at 50% 80%);
+        background-color: ghostwhite;
+        opacity: 0.6;
+    }
+
+    50%, 100% {
+        clip-path: circle(10% at 50% 30%);
+        background-color: whitesmoke;
+        opacity: 0.8;
+    }
+}
+
+.tangbao_span {
+    /* border: 1px red solid; */
+    /* background-color: rebeccapurple; */
+    animation: span 30s ease-in-out infinite;
+}
+
+@keyframes span {
+    10%, 30% {
+        transform: rotateY(90deg);
+    }
+    30%, 50% {
+        transform: rotateY(180deg);
+    }
+    50%, 70% {
+        transform: rotateY(270deg);
+    }
+    70%, 90% {
+        transform: rotateY(360deg);
+    }
+}

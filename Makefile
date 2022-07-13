@@ -1,0 +1,1 @@
+g++ -o main main.cpp ./log/log.cpp ./utils/_string.cpp ./http/http.cpp -lpthread
